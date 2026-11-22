@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: '/AkilliDefter/',
   plugins: [
     react(),
     tailwindcss(),
@@ -20,7 +21,8 @@ export default defineConfig({
         display: 'standalone',
         orientation: 'any',
         lang: 'tr',
-        start_url: '/',
+        start_url: '/AkilliDefter/',
+        scope: '/AkilliDefter/',
         icons: [
           {
             src: 'icon.svg',
